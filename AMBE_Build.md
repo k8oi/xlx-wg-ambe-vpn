@@ -5,10 +5,10 @@
 		* Raspberry Pi OS Lite (64-bit)
 		* `https://www.raspberrypi.com/software/operating-systems/`
 2. Install SD card into Pi and boot Pi
-3. Log in a root (userid: pi password: raspberry)
+3. Log in a root (userid: `pi` password: `raspberry`)
 4. Update and install packages
-		* Apt-get update
-		* Apt-get upgrade
-		* Apt-get install git iptables iptables-persistent wireguard
+		* `apt-get update
+		* apt-get upgrade
+		* apt-get install git iptables iptables-persistent wireguard`
 
 
