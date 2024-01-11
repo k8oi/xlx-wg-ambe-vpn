@@ -7,6 +7,6 @@
 2. Install SD card into Pi and boot Pi
 3. Log in a root (userid: `pi` password: `raspberry`)
 4. Update and install packages
-    * `apt-get update
-    * apt-get upgrade
-    * apt-get install git iptables iptables-persistent wireguard`
+    * `apt-get update`
+    * `apt-get upgrade`
+    * `apt-get install git iptables iptables-persistent wireguard`
