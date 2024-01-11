@@ -14,3 +14,5 @@ This document does not address:
   - Figuring out how to configure AMBE devices
 
 
+### Hardware
+  - I used a brand new Rasp Pi4 for the AMBE server
