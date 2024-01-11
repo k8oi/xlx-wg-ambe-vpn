@@ -1,0 +1,12 @@
+# AMBE Host
+[Interface]
+PrivateKey = <AMBE Private Key>
+Address = 10.0.0.2/32
+ListenPort = 51820
+
+# XLX Host
+[Peer]
+PublicKey = <XLX Public Key>
+Endpoint = <XLX Public Facing IP Address x.x.x.x>:51820
+AllowedIPs = 10.0.0.1/32
+PersistentKeepalive = 25
