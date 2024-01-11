@@ -10,4 +10,4 @@
     * `apt-get update`
     * `apt-get upgrade`
     * `apt-get install git iptables iptables-persistent wireguard`
-1. Project used Northwest Digital Thumb Drives 
+1. Project used [Northwest Digital ThumbDV]{https://nwdigitalradio.com/products/thumbdv™}
