@@ -1,0 +1,15 @@
+# JB
+# Change the Private Key, Public Key, and XLX Ip Address
+
+# XLX host
+[Interface]
+PrivateKey = <XLX Private Key>
+Address = 10.0.0.1/32
+ListenPort = 51820
+PostUp = iptables -t nat -A POSTROUTING -o wg0 -s <XLX Public Facing IP Address x.x.x.x> -p udp --match multiport --dports 10100:10200 -j SNAT --to 10.0.0.1
+PostDown = iptables -t nat -D POSTROUTING -o wg0 -s <XLX Public Facing IP Address x.x.x.x> -p udp --match multiport --dports 10100:10200 -j SNAT --to 10.0.0.1
+
+# AMBE host
+[Peer]
+PublicKey = <AMBE Public Key>
+AllowedIPs = 10.0.0.2/32
