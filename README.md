@@ -21,6 +21,6 @@ This document does not address:
 
 ### Thanks
 I really appreciate the following authors for their links:
-https://n5amd.com/digital-radio-how-tos/create-xlx-xrf-d-star-reflector/
-https://miguelmota.com/blog/getting-started-with-wireguard/
-https://github.com/n5amd/ambed-debian-installer
+  - https://n5amd.com/digital-radio-how-tos/create-xlx-xrf-d-star-reflector/
+  - https://miguelmota.com/blog/getting-started-with-wireguard/
+  - https://github.com/n5amd/ambed-debian-installer
