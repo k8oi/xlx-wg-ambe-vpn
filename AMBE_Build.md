@@ -14,3 +14,6 @@
     * [FTDI Driver Location](https://ftdichip.com/drivers/d2xx-drivers/)
     * Used ARMv8 for the Raspberry Pi-4B
     * [1.4.27 ARMv8 hard-float driver](https://ftdichip.com/wp-content/uploads/2022/07/libftd2xx-arm-v8-1.4.27.tgz)
+1. Download the FTDI driver to the `/root` folder and untar
+    * `wget https://ftdichip.com/wp-content/uploads/2022/07/libftd2xx-arm-v8-1.4.27.tgz`
+    * `tar -xvf libftd2xx-arm-v8-1.4.27.tgz`
