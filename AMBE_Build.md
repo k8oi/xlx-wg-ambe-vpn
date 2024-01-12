@@ -1,5 +1,5 @@
 ## AMBE - Build Process
-### Purpose: Describe, step by step, the process to build a AMBE server on a Raspberry Pi4
+### Purpose: Describe, step by step, the process to build a AMBE server on a Raspberry Pi-4B
 
 1. Install latest Raspberry Pi 4 image to SD Card
     * Raspberry Pi OS Lite (64-bit)
@@ -10,4 +10,7 @@
     * `apt-get update`
     * `apt-get upgrade`
     * `apt-get install git iptables iptables-persistent wireguard`
-1. Project used [Northwest Digital ThumbDV](https://nwdigitalradio.com/products/thumbdv™)
+1. Project used [Northwest Digital ThumbDV](https://nwdigitalradio.com/products/thumbdv™) for transcoding; used 2 devices initially. These devices require FTDI drivers:
+    * [FTDI Driver Location](https://ftdichip.com/drivers/d2xx-drivers/)
+    * Used ARMv8 for the Raspberry Pi-4B
+    * [1.4.27 ARMv8 hard-float driver](https://ftdichip.com/wp-content/uploads/2022/07/libftd2xx-arm-v8-1.4.27.tgz)
