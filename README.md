@@ -10,6 +10,7 @@ Run a XLX server in a datacenter with a static, public facing IP address with th
   - The AMBE server is running on a Raspberry Pi4B with 2 NW Digital ThumbDVs.
   - There is no VPN hardware
   - The AMBE WireGuard VPN will handle changes with home DHCP/external facing changes with a 25 second reconnect interval
+  - No Port forwarding!
 
 ### Requirements
 This document does not address:
