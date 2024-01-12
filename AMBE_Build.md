@@ -42,7 +42,7 @@
     * modify the `ambed.service` file. Change the `ExecStart=/ambed/ambed <your local host>` to the following:
     * `ExecStart=/ambed/ambed 0.0.0.0`
 #### WireGuard Install
-Run all as root. AMBE WireGuard config is located at /etc/wireguard/wg0.conf
+Run all as root. AMBE WireGuard config is located at /etc/wireguard/wg0.conf Many thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
 1. `cd /etc/wireguard/keys`
 1. `umask 077`
