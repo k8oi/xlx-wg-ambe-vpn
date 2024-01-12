@@ -9,10 +9,8 @@ Run a XLX server in a datacenter with a static, public facing IP address with th
 
 ### Requirements
 This document does not address:
-  - Setting up XLX - You should have a working XLX server
-  - Setting up an AMBE server - You have a working AMBE server
   - Figuring out how to configure AMBE devices
 
-
 ### Hardware
-  - I used a brand new Rasp Pi4 for the AMBE server
+  - Brand new Rasp Pi4 for the AMBE server
+  - 2 Northwest Digital ThumbDV USB Sticks
