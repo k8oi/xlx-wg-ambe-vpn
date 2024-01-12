@@ -1,6 +1,7 @@
 ## AMBE - Build Process
 ### Purpose: Describe, step by step, the process to build a AMBE server on a Raspberry Pi-4B
 
+#### Base OS Install
 1. Install latest Raspberry Pi 4 image to SD Card
     * Raspberry Pi OS Lite (64-bit)
     * `https://www.raspberrypi.com/software/operating-systems/`
@@ -10,6 +11,7 @@
     * `apt-get update`
     * `apt-get upgrade`
     * `apt-get install git iptables iptables-persistent wireguard`
+#### FTDI Drivers
 1. Project used [Northwest Digital ThumbDV](https://nwdigitalradio.com/products/thumbdv™) for transcoding; used 2 devices initially. These devices require FTDI drivers:
     * [FTDI Driver Location](https://ftdichip.com/drivers/d2xx-drivers/)
     * Used ARMv8 for the Raspberry Pi-4B
@@ -26,6 +28,7 @@
     * `cp ftd2xx.h /usr/local/include`
     * `cp WinTypes.h /usr/local/include`
     * `ldconfig -v`
+#### AMBE Install
 1. AMBE install, perform the following steps as root - Thanks to n5amd for the Git repo! [ambed-debian-installer](https://github.com/n5amd/ambed-debian-installer)
     * `cd /root`
     * `git clone https://github.com/n5amd/ambed-debian-installer`
@@ -38,4 +41,4 @@
     * cd /etc/systemd/system
     * modify the `ambed.service` file. Change the `ExecStart=/ambed/ambed <your local host>` to the following:
     * `ExecStart=/ambed/ambed 0.0.0.0`
-
+#### WireGuard Install

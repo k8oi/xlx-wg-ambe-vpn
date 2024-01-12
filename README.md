@@ -14,3 +14,13 @@ This document does not address:
 ### Hardware
   - Brand new Rasp Pi4 for the AMBE server
   - 2 Northwest Digital ThumbDV USB Sticks
+
+### Terms
+  - XLX is the XLX Server
+  - AMBE is the AMBE (Pi-4B) Server
+
+### Thanks
+I really appreciate the following authors for their links:
+https://n5amd.com/digital-radio-how-tos/create-xlx-xrf-d-star-reflector/
+https://miguelmota.com/blog/getting-started-with-wireguard/
+https://github.com/n5amd/ambed-debian-installer
