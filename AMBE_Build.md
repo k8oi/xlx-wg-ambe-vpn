@@ -17,3 +17,6 @@
 1. Download the FTDI driver to the `/root` folder and untar
     * `wget https://ftdichip.com/wp-content/uploads/2022/07/libftd2xx-arm-v8-1.4.27.tgz`
     * `tar -xvf libftd2xx-arm-v8-1.4.27.tgz`
+1. Peform the following steps as root:
+    1.  `cd /root/release/build`
+
