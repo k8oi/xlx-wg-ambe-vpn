@@ -4,8 +4,12 @@ XLX AMBE Server running behind DHCP or non Data Center location using point-to-p
 Run a XLX server in a datacenter with a static, public facing IP address with the ability to provide multi-protocol service for D-Plus, DMR, and YSF/C4FM. The AMBE server will run in a different location than the XLX server - home, different data center, whereever. 
 ### Goals
   - The AMBE server may reside "behind" a dynamically changing, public facing IP address.
-  - If the AMBE server IP address changes, the VPN will reestablish connection in under 30 seconds.
   - Use a single Raspberry Pi4 for the AMBE host - no other networking routers, gear, etc.
+  - XLX Server is running in a datacenter with a static IP address
+  - WireGuard VPN connection routing the AMBE UDP packets
+  - The AMBE server is running on a Raspberry Pi4B with 2 NW Digital ThumbDVs.
+  - There is no VPN hardware
+  - The AMBE WireGuard VPN will handle changes with home DHCP/external facing changes with a 25 second reconnect interval
 
 ### Requirements
 This document does not address:
