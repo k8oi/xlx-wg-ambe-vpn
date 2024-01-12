@@ -12,3 +12,11 @@ Run all as root. XLX WireGuard config is located at /etc/wireguard/wg0.conf Than
 1. `sysctl -p`
 1. `wg-quick up wg0`
 1. `systemctl enable wg-quick@wg0.service`
+
+#### Update XLX Server Startup IP Addresses
+Change the default AMBE server address from 127.0.0.1 to the WireGuard interface for the AMBE server (10.0.0.2) Run all as root.
+1. cd /etc/init.d
+2. edit `xlxd`
+    * Change the line (it will be specific to your installation) : `ARGUMENTS="XLX000 11.22.33.44 127.0.0.1`
+    * The new line should look like: `ARGUMENTS="XLX000 <your host ip address x.x.x.x> 10.0.0.2"
+
