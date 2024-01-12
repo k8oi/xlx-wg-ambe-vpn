@@ -17,7 +17,7 @@
 1. Download the FTDI driver to the `/root` folder and untar. The following directions are a summary from the release/ReadMe.txt from the driver tar file.
     * `wget https://ftdichip.com/wp-content/uploads/2022/07/libftd2xx-arm-v8-1.4.27.tgz`
     * `tar -xvf libftd2xx-arm-v8-1.4.27.tgz`
-1. Peform the following steps as root:
+1. Install the FTDI Drivers - peform the following steps as root:
     * `cd /root/release/build`
     * `cp libftd2xx.* /usr/local/lib`
     * `chmod 0755 /usr/local/lib/libftd2xx.so.1.4.27`
@@ -26,3 +26,16 @@
     * `cp ftd2xx.h /usr/local/include`
     * `cp WinTypes.h /usr/local/include`
     * `ldconfig -v`
+1. AMBE install, perform the following steps as root - Thanks to n5amd for the Git repo! [ambed-debian-installer](https://github.com/n5amd/ambed-debian-installer)
+    * `cd /root`
+    * `git clone https://github.com/n5amd/ambed-debian-installer`
+    * `cd ambed-debian-installer`
+    * `./ambe-debian-installer`
+1. Modify the AMBE server to listen to ALL IP interfaces instead of only the host IP address
+    * `cd /ambed`
+    * modify the `run` file. Change the `sudo /ambed/ambed <your local host> &` to the following: 
+    * `sudo /ambed/ambed 0.0.0.0 &`
+    * cd /etc/systemd/system
+    * modify the `ambed.service` file. Change the `ExecStart=/ambed/ambed <your local host>` to the following:
+    * `ExecStart=/ambed/ambed 0.0.0.0`
+
