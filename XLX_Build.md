@@ -23,7 +23,7 @@
 1. `systemctl reload apache2`
 1.  `reboot`
 #### WireGuard Install
-[WireGuard Setup](https://miguelmota.com/blog/getting-started-with-wireguard/)
+[Getting Started with WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
 1. `cd /etc/wireguard/keys`
 1. `umask 077`
