@@ -12,6 +12,7 @@
     * `apt-get update`
     * `apt-get upgrade`
     * `apt-get install git iptables iptables-persistent wireguard`
+---
 #### FTDI Drivers
 1. Project used [Northwest Digital ThumbDV](https://nwdigitalradio.com/products/thumbdv™) for transcoding; used 2 devices initially. These devices require FTDI drivers:
     * [FTDI Driver Location](https://ftdichip.com/drivers/d2xx-drivers/)
@@ -29,6 +30,7 @@
     * `cp ftd2xx.h /usr/local/include`
     * `cp WinTypes.h /usr/local/include`
     * `ldconfig -v`
+---
 #### AMBE Install
 1. AMBE install, perform the following steps as root - Thanks to n5amd for the Git repo! [ambed-debian-installer](https://github.com/n5amd/ambed-debian-installer)
     * `cd /root`
@@ -42,6 +44,7 @@
     * cd /etc/systemd/system
     * modify the `ambed.service` file. Change the `ExecStart=/ambed/ambed <your local host>` to the following:
     * `ExecStart=/ambed/ambed 0.0.0.0`
+---
 #### WireGuard Install
 Run all as root. AMBE WireGuard config is located at /etc/wireguard/wg0.conf Thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
@@ -53,5 +56,6 @@ Run all as root. AMBE WireGuard config is located at /etc/wireguard/wg0.conf Tha
 1. `sysctl -p`
 1. `wg-quick up wg0`
 1. `systemctl enable wg-quick@wg0.service`
+---
 #### Next Steps
 Pop a cold beverage, take a deep breath and reboot the Pi...
