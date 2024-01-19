@@ -12,7 +12,7 @@
 1. Update and install packages
     - `apt-get update`
     - `apt-get upgrade`
-    - `apt-get install git iptables iptables-persistent wireguard`
+    - `apt-get install git iptables iptables-persistent wireguard apache2`
     - `reboot`
 1. (Optional) Change `pi` password to something other than default.
 ##### XLX Installation
