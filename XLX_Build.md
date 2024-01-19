@@ -20,6 +20,13 @@
 1. `cd xlxd-debian-installer`
 1. `./xlxd-debian-installer.sh`
 ##### XLX Configuration
+1. Edit `/etc/init.d/xlxd`
+    - Edit the ARGUMENTS line:
+    - ARGUMENTS="XLX### <YOUR IP> <IP OF AMBED>" #Use 127.0.0.1 if ambed is on the same computer as XLXD
+    - EX: ARGUMENTS="XLX111 192.168.0.2 127.0.0.1"
+2. Update systemd to read the updated init file and restart xlxd:
+    - `systemctl daemon-reload`
+    - `systemctl restart xlxd`
 
 #### WireGuard Install
 Run all as root. XLX WireGuard config is located at `/etc/wireguard/wg0.conf` Thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
