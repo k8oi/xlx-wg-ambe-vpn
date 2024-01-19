@@ -19,7 +19,6 @@
 1. `cd xlxd-debian-installer`
 1. `./xlxd-debian-installer.sh`
 1. `systemctl reload apache2`
-1.  `reboot`
 #### WireGuard Install
 [Getting Started with WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
