@@ -1,6 +1,7 @@
 ## XLX - Build Process
 ### Purpose: Describe, step by step, the process to build an XLX server using a WireGuard VPN connection for AMBE access
 #### Base OS Installation
+Note: I used a local Pi4B for developing this procedure; your preferred Linux dist may or may not work - but I'm guessing it will...
 1. Install latest Raspberry Pi 4 image to SD Card
     - Raspberry Pi OS Lite (64-bit)
     - `https://www.raspberrypi.com/software/operating-systems/`
