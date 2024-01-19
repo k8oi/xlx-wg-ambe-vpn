@@ -19,12 +19,13 @@
 1. `git clone https://github.com/n5amd/xlxd-debian-installer`
 1. `cd xlxd-debian-installer`
 1. `./xlxd-debian-installer.sh`
-##### XLX Configuration
-1. Edit `/etc/init.d/xlxd`
-    - Edit the ARGUMENTS line:
-    - ARGUMENTS="XLX### <YOUR IP> <IP OF AMBED>" #Use 127.0.0.1 if ambed is on the same computer as XLXD
-    - EX: ARGUMENTS="XLX111 192.168.0.2 127.0.0.1"
-2. Update systemd to read the updated init file and restart xlxd:
+#### Update XLX Server AMBE IP Addresses
+Change the default AMBE server address from `127.0.0.1` to the WireGuard interface for the AMBE server (`10.0.0.2`) Run all as root.
+1. `cd /etc/init.d`
+1. Edit `xlxd`
+    - Change the line (it will be specific to your installation) : `ARGUMENTS="XLX000 <your host ip address x.x.x.x> 127.0.0.1`
+    - The new line should look like: `ARGUMENTS="XLX000 <your host ip address x.x.x.x> 10.0.0.2"`
+1. Update systemd to read the updated init file and restart xlxd:
     - `systemctl daemon-reload`
     - `systemctl restart xlxd`
 
@@ -39,9 +40,3 @@ Run all as root. XLX WireGuard config is located at `/etc/wireguard/wg0.conf` Th
 1. `sysctl -p`
 1. `wg-quick up wg0`
 1. `systemctl enable wg-quick@wg0.service`
-#### Update XLX Server Startup IP Addresses
-Change the default AMBE server address from `127.0.0.1` to the WireGuard interface for the AMBE server (`10.0.0.2`) Run all as root.
-1. `cd /etc/init.d`
-1. edit `xlxd`
-    - Change the line (it will be specific to your installation) : `ARGUMENTS="XLX000 <your host ip address x.x.x.x> 127.0.0.1`
-    - The new line should look like: `ARGUMENTS="XLX000 <your host ip address x.x.x.x> 10.0.0.2"`
