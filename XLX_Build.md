@@ -6,7 +6,7 @@
 1. Install latest Raspberry Pi 4 image to SD Card
     - Raspberry Pi OS Lite (64-bit)
     - `https://www.raspberrypi.com/software/operating-systems/`
-    - Note: The Raspberry Pi Imager has the latest versions
+    - Note: The [Raspberry Pi Imager](https://www.raspberrypi.com/software/) has the latest versions
 1. Install SD card into Pi and boot Pi
 1. Log in a root (userid: `pi` password: `raspberry`)
 1. Update and install packages
@@ -16,13 +16,14 @@
     - `reboot`
 1. (Optional) Change `pi` password to something other than default.
 ##### XLX Installation
+[N5AMD XLX Git Repo](https://github.com/n5amd/xlxd-debian-installer)
 1. `git clone https://github.com/n5amd/xlxd-debian-installer`
 1. `cd xlxd-debian-installer`
 1. `./xlxd-debian-installer.sh`
 1. `systemctl reload apache2`
 1.  `reboot`
 #### WireGuard Install
-Run all as root. XLX WireGuard config is located at `/etc/wireguard/wg0.conf` Thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
+[WireGuard Setup](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
 1. `cd /etc/wireguard/keys`
 1. `umask 077`
