@@ -1,5 +1,9 @@
 ## XLX - Build Process
-### Purpose: Describe, step by step, the process to configure a WireGuard XLX point to point VPN connection
+### Purpose: Describe, step by step, the process to build an XLX server using a WireGuard VPN connection for AMBE access
+### WORK IN PROGRESS - Incomplete as of 2024-01-19
+### XLX Installation
+
+
 #### WireGuard Install
 Run all as root. XLX WireGuard config is located at `/etc/wireguard/wg0.conf` Thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
 1. `mkdir -p /etc/wireguard/keys`
