@@ -1,8 +1,25 @@
 ## XLX - Build Process
 ### Purpose: Describe, step by step, the process to build an XLX server using a WireGuard VPN connection for AMBE access
 ### WORK IN PROGRESS - Incomplete as of 2024-01-19
-### XLX Installation
-
+#### XLX Installation
+##### Base OS Installation
+1. Install latest Raspberry Pi 4 image to SD Card
+    - Raspberry Pi OS Lite (64-bit)
+    - `https://www.raspberrypi.com/software/operating-systems/`
+    - Note: The Raspberry Pi Imager has the latest versions
+1. Install SD card into Pi and boot Pi
+1. Log in a root (userid: `pi` password: `raspberry`)
+1. Update and install packages
+    - `apt-get update`
+    - `apt-get upgrade`
+    - `apt-get install git iptables iptables-persistent wireguard`
+    - `reboot`
+1. (Optional) Change `pi` password to something other than default.
+##### XLX Installation
+1. `git clone https://github.com/n5amd/xlxd-debian-installer`
+1. `cd xlxd-debian-installer`
+1. `./xlxd-debian-installer.sh`
+##### XLX Configuration
 
 #### WireGuard Install
 Run all as root. XLX WireGuard config is located at `/etc/wireguard/wg0.conf` Thanks to Miguel Mota and his [WireGuard setup page](https://miguelmota.com/blog/getting-started-with-wireguard/)
